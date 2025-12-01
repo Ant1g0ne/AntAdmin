@@ -1,27 +1,47 @@
 # AntAdmin 电商后台管理系统
 
-企业电商后台管理系统（Vue3 + Vite + Element Plus + ECharts）
+一个基于 **Vue 3 + Vite + Element Plus + Pinia + ECharts** 的电商后台管理系统，包含登录鉴权、首页数据大屏、商品/订单/用户管理等核心模块，可用于求职作品展示。
 
 ## 在线预览
-
-https://antadmin-yourname.vercel.app
+> `https://ornate-tapioca-b25411.netlify.app/`
 
 ## 功能模块
 
-- [x] 登录/退出登录
-- [x] 首页数据大屏（ECharts）
-- [x] 商品管理（列表 + 添加 + 富文本 + 多图上传）
-- [x] 订单管理（状态流转）
-- [x] 可折叠侧边栏 + 深色模式 git push -u origin main --force
-- [x] 响应式布局 + 路由拦截
+- [x] 登录 / 退出登录（路由守卫 + 本地 token 模拟）
+- [x] 首页数据大屏（ECharts 折线图 + 饼图，展示销售趋势、商品分类占比等）
+- [x] 商品管理
+  - 商品列表（分页、状态标签、编辑 / 删除）
+  - 添加 / 编辑商品（表单校验、多图上传、富文本描述可扩展）
+- [x] 订单管理
+  - 订单列表（状态标签）
+  - 查看详情、发货、删除（前端模拟状态流转）
+- [x] 用户管理
+  - 用户列表 + 搜索（支持按用户名 / 手机号过滤）
+- [x] 布局与体验
+  - 可折叠侧边栏
+  - 浅色 / 深色主题切换
+  - 基于 Vue Router 的多页面路由
 
 ## 技术栈
 
-Vue3 + Vite + Pinia + Vue-Router + Element Plus + ECharts
+- 框架：Vue 3 + Vite
+- UI 组件：Element Plus
+- 状态管理：Pinia
+- 路由：Vue Router 4
+- 图表：ECharts
 
 ## 本地运行
 
-```bash
+# 安装依赖
 npm install
+
+# 本地开发
 npm run dev
-```
+
+# 生产构建
+npm run build## 项目亮点（可在简历中提及）
+
+- 自定义深色 / 浅色主题切换，并通过 Pinia + DOM class 管理全局样式。
+- 使用 ECharts 实现首页数据大屏和数据统计，动态展示趋势和占比。
+- 使用前端 Mock 数据模拟商品 / 订单 / 用户模块，完整展示增删改查流程。
+- 使用路由守卫实现简单的登录鉴权流程。
