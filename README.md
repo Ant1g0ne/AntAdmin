@@ -39,7 +39,7 @@ npm install
 npm run dev
 
 # 生产构建
-npm run build## 项目亮点（可在简历中提及）
+npm run build## 项目亮点
 
 - 自定义深色 / 浅色主题切换，并通过 Pinia + DOM class 管理全局样式。
 - 使用 ECharts 实现首页数据大屏和数据统计，动态展示趋势和占比。
